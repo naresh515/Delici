@@ -2436,6 +2436,27 @@ i.counter-sidebar {
     animation-name: fadeInUp;
 }
 
+.inner-footer .links li a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    display: block;
+    height: 5px;
+    opacity: 0;
+    transform: scale(0.2, 1);
+    border-top: 1px solid rgb(228, 197, 144);
+    border-bottom: 1px solid rgb(228, 197, 144);
+    transition: all 300ms ease-in-out;
+}
+
+.inner-footer .links li a:hover:before {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 300ms ease-in-out;
+}
+
 .info-section ul {
     padding: 0px;
     margin: 0px;
