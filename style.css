@@ -1,8 +1,12 @@
 :root {
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-family-DMsans: 'DM Sans', sans-serif;
-    --font-family-Forum: 'Forum', cursive;
+    --font-family-Forum: 'Forum';
+}
+
+
+@font-face {
+    font-family: 'Forum';
+    src: url(./Forum/Forum-Regular.ttf);
 }
 
 body,
@@ -13,6 +17,18 @@ body,
     margin: 0 auto;
     box-sizing: border-box;
     font-family: var(--font-family-DMsans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.queto-text,
+.tab-btn span {
+    font-family: var(--font-family-Forum);
+    font-weight: normal;
 }
 
 .preloader-close {
