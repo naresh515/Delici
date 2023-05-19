@@ -13,17 +13,36 @@
 </head>
 
 <body>
-    <!-- <div class="page-loader">
-        <div class="spinner"></div>
-        <div class="txt-loading">
-            <span data-text-preloader="D" class="letters-loading">D</span>
-            <span data-text-preloader="E" class="letters-loading">E</span>
-            <span data-text-preloader="L" class="letters-loading">L</span>
-            <span data-text-preloader="I" class="letters-loading">I</span>
-            <span data-text-preloader="C" class="letters-loading">C</span>
-            <span data-text-preloader="I" class="letters-loading">I</span>
+    <div class="loader-wrap">
+        <div class="preloader">
+            <div class="preloader-close">x</div>
+            <div id="handle-preloader" class="handle-preloader">
+                <div class="animation-preloader">
+                    <div class="spinner"></div>
+                    <div class="txt-loading">
+                        <span data-text-preloader="D" class="letters-loading latest">
+                            D
+                        </span>
+                        <span data-text-preloader="E" class="letters-loading latest1">
+                            E
+                        </span>
+                        <span data-text-preloader="L" class="letters-loading latest2">
+                            L
+                        </span>
+                        <span data-text-preloader="I" class="letters-loading latest3">
+                            I
+                        </span>
+                        <span data-text-preloader="C" class="letters-loading latest4">
+                            C
+                        </span>
+                        <span data-text-preloader="I" class="letters-loading latest5">
+                            I
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> -->
+    </div>
     <div class="container">
         <div class="main-container">
             <header>
@@ -55,104 +74,111 @@
                         </div>
                     </div>
                     <div class="nav-bar">
-                        <div class="main-nav-logo">
-                            <div class="left-nav">
-                                <div class="logo">
-                                    <img src="./img/logo.png">
+                        <div class="inner-nav1">
+                            <div class="main-nav-logo">
+                                <div class="left-nav">
+                                    <div class="logo">
+                                        <img src="./img/logo.png">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="main-nav-text">
-                            <div class="right-nav">
-                                <ul class="navigation">
-                                    <li class="active"><a href="#">Home</a></li>
-                                    <li class="dropdown"><a href="#">Menus<i
-                                                class="fa fa-solid fa-angle-down arrow-btn"></i></a>
-                                        <ul class="dropdown-content">
-                                            <li class="dropdown-images">
-                                                <div class="menu-block">
-                                                    <div class="image"><a href="#"><img src="./img/menu-image-1.jpg"
-                                                                alt=""></a>
+                            <div class="main-nav-text">
+                                <div class="right-nav">
+                                    <ul class="navigation">
+                                        <li class="active"><a href="#">Home</a></li>
+                                        <li class="dropdown"><a href="#">Menus<i
+                                                    class="fa fa-solid fa-angle-down arrow-btn"></i></a>
+                                            <ul class="dropdown-content">
+                                                <li class="dropdown-images">
+                                                    <div class="menu-block">
+                                                        <div class="image"><a href="#"><img src="./img/menu-image-1.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                        <div class="title"><a href="#">Menu
+                                                                list 1</a></div>
                                                     </div>
-                                                    <div class="title"><a href="#">Menu
-                                                            list 1</a></div>
-                                                </div>
-                                                <div class="menu-block">
-                                                    <div class="image"><a href="#"><img src="./img/menu-image-11.jpg"
-                                                                alt=""></a></div>
-                                                    <div class="title"><a href="#">Menu
-                                                            list 2</a></div>
-                                                </div>
-                                                <div class="menu-block">
-                                                    <div class="image"><a href="#"><img src="./img/menu-image-3.jpg"
-                                                                alt=""></a>
+                                                    <div class="menu-block">
+                                                        <div class="image"><a href="#"><img
+                                                                    src="./img/menu-image-11.jpg" alt=""></a></div>
+                                                        <div class="title"><a href="#">Menu
+                                                                list 2</a></div>
                                                     </div>
-                                                    <div class="title"><a href="#">Menu
-                                                            list 3</a></div>
-                                                </div>
-                                                <div class="menu-block">
-                                                    <div class="image"><a href="#"><img src="./img/menu-image-4.jpg"
-                                                                alt=""></a>
+                                                    <div class="menu-block">
+                                                        <div class="image"><a href="#"><img src="./img/menu-image-3.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                        <div class="title"><a href="#">Menu
+                                                                list 3</a></div>
                                                     </div>
-                                                    <div class="title"><a href="#">Menu
-                                                            list 4</a></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">about us</a></li>
-                                    <li><a href="#">our chefs</a></li>
-                                    <li class="second-dropdown"><a href="#">pages<i
-                                                class="fa fa-solid fa-angle-down arrow-btn"></i>
-                                        </a>
-                                        <ul class="second-dropdown-content">
-                                            <li class="second-dropdown-text">
-                                                <span class="separator-img"></span><span class="separator-text">Dropdown
-                                                    Menu 1</span>
-                                            </li>
-                                            <li class="second-dropdown-text">
-                                                <span class="separator-img"></span><span class="separator-text">Dropdown
-                                                    Menu 2</span>
-                                            </li>
-                                            <li class="second-dropdown-text">
-                                                <span class="separator-img"></span><span class="separator-text">Dropdown
-                                                    Menu 3</span>
-                                            </li>
-                                            <li class="second-dropdown-text">
-                                                <span class="separator-img"></span><span class="separator-text">Dropdown
-                                                    Menu 4 <i class="fa fa-solid fa-angle-right"></i> </span>
-                                                <ul class="child-dropdown">
-                                                    <li class="second-dropdown-text">
-                                                        <span class="separator-img"></span><span
-                                                            class="separator-text">Dropdown
-                                                            Menu level 1</span>
-                                                    </li>
-                                                    <li class="second-dropdown-text">
-                                                        <span class="separator-img"></span><span
-                                                            class="separator-text">Dropdown
-                                                            Menu level 2</span>
-                                                    </li>
-                                                    <li class="second-dropdown-text">
-                                                        <span class="separator-img"></span><span
-                                                            class="separator-text">Dropdown
-                                                            Menu level 3</span>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="second-dropdown-text">
-                                                <span class="separator-img"></span><span class="separator-text">Dropdown
-                                                    Menu 5</span>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">contact</a></li>
-                                </ul>
-                            </div>
-                            <button type="button" class="send main-btn"><span>find a table</span></button>
-                            <div class="toggle">
-                                <span class="line1"></span>
-                                <span class="line2"></span>
-                                <span class="line3"></span>
+                                                    <div class="menu-block">
+                                                        <div class="image"><a href="#"><img src="./img/menu-image-4.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                        <div class="title"><a href="#">Menu
+                                                                list 4</a></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">about us</a></li>
+                                        <li><a href="#">our chefs</a></li>
+                                        <li class="second-dropdown"><a href="#">pages<i
+                                                    class="fa fa-solid fa-angle-down arrow-btn"></i>
+                                            </a>
+                                            <ul class="second-dropdown-content">
+                                                <li class="second-dropdown-text">
+                                                    <span class="separator-img"></span><span
+                                                        class="separator-text">Dropdown
+                                                        Menu 1</span>
+                                                </li>
+                                                <li class="second-dropdown-text">
+                                                    <span class="separator-img"></span><span
+                                                        class="separator-text">Dropdown
+                                                        Menu 2</span>
+                                                </li>
+                                                <li class="second-dropdown-text">
+                                                    <span class="separator-img"></span><span
+                                                        class="separator-text">Dropdown
+                                                        Menu 3</span>
+                                                </li>
+                                                <li class="second-dropdown-text">
+                                                    <span class="separator-img"></span><span
+                                                        class="separator-text">Dropdown
+                                                        Menu 4 <i class="fa fa-solid fa-angle-right"></i> </span>
+                                                    <ul class="child-dropdown">
+                                                        <li class="second-dropdown-text">
+                                                            <span class="separator-img"></span><span
+                                                                class="separator-text">Dropdown
+                                                                Menu level 1</span>
+                                                        </li>
+                                                        <li class="second-dropdown-text">
+                                                            <span class="separator-img"></span><span
+                                                                class="separator-text">Dropdown
+                                                                Menu level 2</span>
+                                                        </li>
+                                                        <li class="second-dropdown-text">
+                                                            <span class="separator-img"></span><span
+                                                                class="separator-text">Dropdown
+                                                                Menu level 3</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="second-dropdown-text">
+                                                    <span class="separator-img"></span><span
+                                                        class="separator-text">Dropdown
+                                                        Menu 5</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">contact</a></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="send main-btn"><span>find a table</span></button>
+                                <div class="toggle">
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -298,11 +324,10 @@
                                 </div>
                                 <div class="offer-block offer-block2">
                                     <div class="inner-box">
-                                        <div class="image"><a href="menu-list-2.html"><img src="./img/offer-image-2.jpg"
-                                                    alt=""></a>
+                                        <div class="image"><a href="#"><img src="./img/offer-image-2.jpg" alt=""></a>
                                         </div>
-                                        <h3><a href="menu-list-2.html">Appetizers</a></h3>
-                                        <div class="more-link"><a href="menu-list-2.html">view menu</a></div>
+                                        <h3><a href="#">Appetizers</a></h3>
+                                        <div class="more-link"><a href="#">view menu</a></div>
                                     </div>
                                 </div>
                                 <div class="offer-block">
@@ -1153,7 +1178,7 @@
                                             <div class="images-slider">
                                                 <img src="./img/menu-image-12.jpg">
                                             </div>
-                                            <h4><a href="menu-list-2.html">Tokusen Wagyu</a></h4>
+                                            <h4><a href="#">Tokusen Wagyu</a></h4>
                                             <div class="text desc"><a href="#"> Tomatoes, green bell pepper, sliced
                                                     cucumber
                                                     onion,
@@ -1164,7 +1189,7 @@
                                             <div class="images-slider">
                                                 <img src="./img/menu-image-13.jpg">
                                             </div>
-                                            <h4><a href="menu-list-2.html">Butternut Pumpkin</a></h4>
+                                            <h4><a href="#">Butternut Pumpkin</a></h4>
                                             <div class="text desc"><a href="#"> Avocados with crab meat, red onion, crab
                                                     salad stuffed
                                                     bell pepper...</a></div>
@@ -1174,7 +1199,7 @@
                                             <div class="images-slider">
                                                 <img src="./img/menu-image-14.jpg">
                                             </div>
-                                            <h4><a href="menu-list-2.html">Opu Fish</a></h4>
+                                            <h4><a href="#">Opu Fish</a></h4>
                                             <div class="text desc"><a href="#"> Vegetables, cheeses, ground meats,
                                                     tomato
                                                     sauce,
@@ -1185,7 +1210,7 @@
                                             <div class="images-slider">
                                                 <img src="./img/menu-image-11.jpg">
                                             </div>
-                                            <h4><a href="menu-list-2.html">Greek Salad</a></h4>
+                                            <h4><a href="#">Greek Salad</a></h4>
                                             <div class="text desc"><a href="#"> Avocados with crab meat, red onion, crab
                                                     salad red bell
                                                     pepper...</a></div>
@@ -1195,7 +1220,7 @@
                                             <div class="images-slider">
                                                 <img src="./img/menu-image-12.jpg">
                                             </div>
-                                            <h4><a href="menu-list-2.html">Tokusen Wagyu</a></h4>
+                                            <h4><a href="#">Tokusen Wagyu</a></h4>
                                             <div class="text desc"><a href="#"> Tomatoes, green bell pepper, sliced
                                                     cucumber
                                                     onion,
@@ -1206,7 +1231,7 @@
                                             <div class="images-slider">
                                                 <img src="./img/menu-image-13.jpg">
                                             </div>
-                                            <h4><a href="menu-list-2.html">Butternut Pumpkin</a></h4>
+                                            <h4><a href="#">Butternut Pumpkin</a></h4>
                                             <div class="text desc"><a href="#"> Avocados with crab meat, red onion, crab
                                                     salad stuffed
                                                     bell pepper...</a></div>
@@ -1216,7 +1241,7 @@
                                             <div class="images-slider">
                                                 <img src="./img/menu-image-14.jpg">
                                             </div>
-                                            <h4><a href="menu-list-2.html">Opu Fish</a></h4>
+                                            <h4><a href="#">Opu Fish</a></h4>
                                             <div class="text desc"><a href="#"> Vegetables, cheeses, ground meats,
                                                     tomato
                                                     sauce,
@@ -1227,7 +1252,7 @@
                                             <div class="images-slider">
                                                 <img src="./img/menu-image-11.jpg">
                                             </div>
-                                            <h4><a href="menu-list-2.html">Greek Salad</a></h4>
+                                            <h4><a href="#">Greek Salad</a></h4>
                                             <div class="text desc"><a href="#"> Avocados with crab meat, red onion, crab
                                                     salad red bell
                                                     pepper...</a></div>
