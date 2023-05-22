@@ -2165,11 +2165,6 @@ h3 a {
     }
 }
 
-.icon:before {
-    font-family: 'Font Awesome 6 Pro';
-    content: "\f04b";
-}
-
 .ripple:before {
     animation-delay: .9s;
     content: "";
@@ -3509,5 +3504,9 @@ i.counter-sidebar {
 
     .img-slider-gallery {
         padding-top: 0px;
+    }
+
+    .icon img {
+        width: unset;
     }
 }
