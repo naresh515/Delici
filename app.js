@@ -53,6 +53,7 @@ $(window).on('load', function () {
         pauseOnHover: false,
         infinite: true,
         cssEase: 'linear',
+        asNavFor: '.clients-image',
     })
     $('.clients-image ').slick({
         slidesToShow: 2,
@@ -63,6 +64,8 @@ $(window).on('load', function () {
         centerMode: true,
         variableWidth: true,
         infinite: true,
+        asNavFor: '.testimonials-slider',
+        focusOnSelect: true
     })
     const $tabContents = $('.tab');
     const $tab = $('.tab-buttons .tab-btn');

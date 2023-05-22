@@ -934,6 +934,7 @@ html:not(.body-menu-opened) .toggle .line3 {
 .booking-info .bk-no a {
     color: rgb(228, 197, 144);
     padding-bottom: 5px;
+    position: relative;
 }
 
 .left-side-content {
@@ -1427,6 +1428,13 @@ h4 a {
     animation-timing-function: linear;
 }
 
+.testimonials-all-slider {
+    position: relative;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .auth-title {
     position: relative;
     text-transform: uppercase;
@@ -1444,6 +1452,7 @@ h4 a {
     display: block;
     width: 100px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .client-img img {
@@ -1977,7 +1986,7 @@ h4 a {
 
 .booking-info .bk-no a:hover:before {
     opacity: 1;
-    transform: scale(0.4, 1);
+    transform: scale(1, 1);
     transition: all 300ms ease-in-out;
 }
 
