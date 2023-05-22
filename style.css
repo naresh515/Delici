@@ -3501,4 +3501,9 @@ i.counter-sidebar {
         width: 90%;
         margin: 0 auto;
     }
+
+    .slider-next,
+    .slider-prev {
+        display: none;
+    }
 }
