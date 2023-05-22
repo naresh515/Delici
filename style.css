@@ -23,6 +23,10 @@ body {
     overflow: hidden;
 }
 
+button {
+    cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -890,7 +894,7 @@ html:not(.body-menu-opened) .toggle .line3 {
 
 .middle-section {
     position: relative;
-    padding: 170px 0px 210px;
+    padding: 170px 0px 310px;
     background-color: rgb(23, 24, 25);
     display: flex;
 }
@@ -980,7 +984,7 @@ html:not(.body-menu-opened) .toggle .line3 {
     max-width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    bottom: 0;
+    bottom: 100px;
     margin-left: -100px;
 }
 
@@ -2579,7 +2583,7 @@ i.counter-sidebar {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -8px;
     display: block;
     height: 5px;
     border-top: 1px solid transparent;
