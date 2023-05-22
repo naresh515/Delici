@@ -15,7 +15,9 @@ $(window).on('load', function () {
         variableWidth: false,
         pauseOnHover: false,
         infinite: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        prevArrow: '<div class="slider-arrow slider-prev"><i class=" fa fa-angle-left angle-icon"></i></div>',
+        nextArrow: '<div class="slider-arrow slider-next"><i class=" fa fa-angle-right angle-icon"></i></div>',
     })
     $('.gallery-images').slick({
         slidesToShow: 4,
@@ -26,6 +28,8 @@ $(window).on('load', function () {
         pauseOnHover: false,
         infinite: true,
         cssEase: 'linear',
+        prevArrow: '<div class="slider-arrow slider-prev"><i class=" fa fa-angle-left angle-icon"></i></div>',
+        nextArrow: '<div class="slider-arrow slider-next"><i class=" fa fa-angle-right angle-icon"></i></div>',
         responsive: [
             {
                 breakpoint: 824,
@@ -46,7 +50,7 @@ $(window).on('load', function () {
         variableWidth: false,
         pauseOnHover: false,
         infinite: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
     })
     $('.clients-image ').slick({
         slidesToShow: 2,
@@ -141,3 +145,7 @@ $(window).on('load', function () {
 
     });
 });
+
+function sliderWork() {
+
+}
