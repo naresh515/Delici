@@ -242,7 +242,7 @@ a {
 
 .testimonials-images .slick-prev,
 .testimonials-images .slick-next {
-    display: none;
+    display: none !important;
 }
 
 .slider-next:before,
@@ -3504,6 +3504,10 @@ i.counter-sidebar {
 
     .slider-next,
     .slider-prev {
-        display: none;
+        display: none !important;
+    }
+
+    .img-slider-gallery {
+        padding-top: 0px;
     }
 }
