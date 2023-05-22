@@ -11,7 +11,7 @@ $(window).on('load', function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 4000,
         variableWidth: false,
         pauseOnHover: false,
         infinite: true,
@@ -145,7 +145,3 @@ $(window).on('load', function () {
 
     });
 });
-
-function sliderWork() {
-
-}
