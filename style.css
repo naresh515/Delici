@@ -19,6 +19,10 @@ body,
     font-family: var(--font-family-DMsans);
 }
 
+body {
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -72,6 +76,10 @@ a {
     align-items: center;
 }
 
+.img-slider h1 {
+    margin: 30px 0px 0px !important;
+}
+
 .img-slider {
     position: relative;
 }
@@ -81,6 +89,8 @@ a {
     max-width: 100%;
     transform: scale(1.0);
     transform: all 0ms linear 0ms;
+    height: 880px;
+    object-fit: cover;
 }
 
 .img-text {
@@ -88,6 +98,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 25px;
 }
 
 .header-top {
@@ -185,6 +196,7 @@ a {
     border-bottom-color: rgba(0, 0, 0, 0.15);
     position: fixed !important;
     top: 0 !important;
+    margin-top: 0px !important;
 }
 
 .nav-bar {
@@ -269,6 +281,7 @@ a {
     overflow: hidden;
     max-width: 100%;
     height: 50px;
+    align-items: center;
 }
 
 .top-left-nav-text {
@@ -279,7 +292,7 @@ a {
 
 .top-left-nav-text li a {
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
 
 .top-left-nav-text li {
@@ -292,13 +305,17 @@ a {
 }
 
 .top-left-nav-text .text-after {
-    padding-right: 50px;
+    padding-right: 70px;
+}
+
+.nav-bar {
+    margin-top: 10px;
 }
 
 .text-after:after {
     content: '';
     position: absolute;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 8px;
     height: 7px;
     width: 7px;
@@ -332,8 +349,9 @@ a {
 
 .top-nav {
     color: #ffffff;
-    padding: 0px 0px 10px;
+    /* padding: 0px 0px 10px; */
     border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    height: 50px;
 }
 
 .navigation li a {
@@ -1958,7 +1976,7 @@ h4 a {
 
 .booking-info .bk-no a:hover:before {
     opacity: 1;
-    transform: scale(0.7, 1);
+    transform: scale(0.4, 1);
     transition: all 300ms ease-in-out;
 }
 
@@ -2708,10 +2726,6 @@ i.counter-sidebar {
     border-radius: 50%;
 }
 
-.model-open {
-    overflow: hidden;
-}
-
 .image-box img {
     border-radius: 50%;
 }
@@ -2895,7 +2909,7 @@ i.counter-sidebar {
 }
 
 .slice-slider-img .slick-current img {
-    transform: scale(1.5);
+    transform: scale(1.15);
     transition: all 7000ms linear 0ms;
 }
 
