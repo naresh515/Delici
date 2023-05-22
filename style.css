@@ -35,6 +35,10 @@ h6,
     font-weight: normal;
 }
 
+.top-left-nav-text li a:hover {
+    color: rgb(228, 197, 144);
+}
+
 .preloader-close {
     position: fixed;
     z-index: 99999999;
@@ -222,6 +226,7 @@ a {
     transition: all 400ms ease;
     z-index: 1;
     cursor: pointer;
+    margin-top: -16px;
 }
 
 .slider-prev:hover:before,
@@ -292,7 +297,7 @@ a {
 
 .top-left-nav-text li a {
     text-decoration: none;
-    color: white !important;
+    color: white;
 }
 
 .top-left-nav-text li {
@@ -321,10 +326,6 @@ a {
     width: 7px;
     border: 1px solid rgb(228, 197, 144);
     transform: rotate(45deg);
-}
-
-.bg-color a {
-    color: rgb(228, 197, 144) !important;
 }
 
 ::marker {
@@ -418,7 +419,7 @@ a {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 .navigation li {
@@ -577,7 +578,7 @@ ul.second-dropdown-content {
     border-radius: 0px;
     overflow: hidden;
     transition: all 0.3s ease 0s;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .navigation li:hover .title a:before,
@@ -3349,7 +3350,7 @@ i.counter-sidebar {
     }
 
     .booking-info .bk-no a {
-        font-size: 35px;
+        font-size: 20px;
     }
 
     .left-side {
