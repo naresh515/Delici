@@ -962,8 +962,8 @@ html:not(.body-menu-opened) .toggle .line3 {
 
 .top-router {
     position: absolute;
-    right: 50px;
-    top: 50px;
+    right: -50px;
+    top: -50px;
     z-index: 1;
 }
 
