@@ -59,6 +59,21 @@ h6,
     border-radius: 0%;
 }
 
+.middle-section .right-side .images {
+    transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    pointer-events: none;
+}
+
+.middle-section .right-side .images .img-hover,
+.middle-section .right-side .images .img-hover1 {
+    transform: translate3d(4.5px, -8.5px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: relative;
+}
+
 .main-container {
     overflow: hidden;
 }
@@ -194,9 +209,6 @@ a {
 
 .offer-block {
     padding: 0px 75px;
-    animation-duration: 1500ms;
-    animation-delay: 0ms;
-    animation-name: fadeInUp;
 }
 
 .fixed {
@@ -502,7 +514,14 @@ ul.second-dropdown-content {
     transition: all .5s ease-in-out;
 }
 
-.second-dropdown-text:hover .separator-img:before {
+.separator-text1:hover {
+    color: rgb(228, 197, 144);
+    padding-left: 25px;
+    transition: all .5s ease-in-out;
+}
+
+.second-dropdown-text:hover .separator-img:before,
+.second-dropdown-text1:hover .separator-img1:before {
     animation: show .5s ease-in-out;
     opacity: 1;
 }
@@ -551,7 +570,8 @@ ul.second-dropdown-content {
     transform: translateY(-30px);
 }
 
-.separator-img:before {
+.separator-img:before,
+.separator-img1:before {
     content: '';
     position: absolute;
     height: 8px;
@@ -564,6 +584,10 @@ ul.second-dropdown-content {
     animation-timing-function: linear;
     top: 20px;
     opacity: 0;
+}
+
+.separator-img1:before {
+    top: unset;
 }
 
 .send {
@@ -894,23 +918,14 @@ html:not(.body-menu-opened) .toggle .line3 {
 
 .middle-section {
     position: relative;
-    padding: 170px 0px 310px;
+    padding: 170px 0px 10px;
     background-color: rgb(23, 24, 25);
     display: flex;
 }
 
 .left-side {
     padding-right: 90px;
-    animation-duration: 1500ms;
-    animation-delay: 0ms;
-    animation-name: fadeInLeft;
     position: relative;
-}
-
-.right-side {
-    animation-duration: 1500ms;
-    animation-delay: 0ms;
-    animation-name: fadeInRight;
 }
 
 .booking-info {
@@ -949,6 +964,7 @@ html:not(.body-menu-opened) .toggle .line3 {
     position: absolute;
     right: 50px;
     top: 50px;
+    z-index: 1;
 }
 
 .top-router:before {
@@ -992,19 +1008,6 @@ html:not(.body-menu-opened) .toggle .line3 {
     position: relative;
 }
 
-
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 .bottom-section {
     position: relative;
     background: rgb(14, 13, 12);
@@ -1035,9 +1038,6 @@ html:not(.body-menu-opened) .toggle .line3 {
     max-width: 100%;
     padding: 225px 20px 225px 130px;
     visibility: visible;
-    animation-duration: 1500ms;
-    animation-delay: 0ms;
-    animation-name: fadeInRight;
     margin-right: 100px;
 }
 
@@ -1841,9 +1841,6 @@ h4 a {
 .why-us-block {
     padding: 0 20px;
     margin-bottom: 40px;
-    animation-duration: 1500ms;
-    animation-delay: 0ms;
-    animation-name: fadeInUp;
 }
 
 .why-us-inner {
@@ -1853,25 +1850,10 @@ h4 a {
     text-align: center;
     background: rgb(21, 22, 22);
     visibility: visible;
-    animation-duration: 1500ms;
-    animation-delay: 0ms;
-    animation-name: fadeInUp;
 }
 
 .inner-block {
     background-color: rgb(18, 17, 17);
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .why-us-block .why-us-inner:hover .icon-box {
@@ -1899,9 +1881,6 @@ h4 a {
 
 .featured-layout {
     position: relative;
-    animation-duration: 1500ms;
-    animation-delay: 0ms;
-    animation-name: fadeInUp;
 }
 
 .featured-img img {
@@ -2045,8 +2024,6 @@ h3 a {
 .team-details {
     padding: 0px 25px;
     margin: 0px 0px 40px;
-    animation-duration: 1500ms;
-    animation-name: fadeInUp;
 }
 
 .overlay-box {
@@ -2260,24 +2237,6 @@ i.counter-sidebar {
     font-size: 45px;
 }
 
-.inner-bottom-img {
-    animation-duration: 1500ms;
-    animation-delay: 0ms;
-    animation-name: fadeInLeft;
-}
-
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 .news-section {
     position: relative;
     padding: 100px 0px 80px;
@@ -2478,9 +2437,6 @@ i.counter-sidebar {
     padding: 100px 30px 90px;
     background: rgb(14, 13, 12) url(./img/pattern-4.png) center top repeat;
     visibility: visible;
-    animation-duration: 1500ms;
-    animation-delay: 0ms;
-    animation-name: fadeInUp;
 }
 
 .inner-footer .links li a:before {

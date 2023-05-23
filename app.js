@@ -1,3 +1,4 @@
+AOS.init();
 $(window).on('load', function () {
     setTimeout(function () {
         $('.loader-wrap').fadeOut('slow');
@@ -149,4 +150,11 @@ $(window).on('load', function () {
         return false;
 
     });
+});
+
+let card = document.querySelector('.middle-section .right-side .images');
+document.addEventListener('mousemove', function (e) {
+    let xAxis = (window.innerWidth / 4 - e.pageX) / 100;
+    let yAxis = (window.innerHeight / 100 - e.pageY) / 100;
+    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
