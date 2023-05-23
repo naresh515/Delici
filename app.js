@@ -155,6 +155,6 @@ $(window).on('load', function () {
 let card = document.querySelector('.middle-section .right-side .images');
 document.addEventListener('mousemove', function (e) {
     let xAxis = (window.innerWidth / 5 - e.pageX) / 300;
-    let yAxis = (window.innerHeight / 5 - e.pageY) / 300;
+    let yAxis = (window.innerHeight / 5 + e.pageY) / 300;
     card.style.transform = `rotateX(${xAxis}deg) rotateY(${yAxis}deg)`;
 });
