@@ -68,9 +68,6 @@ h6,
 
 .middle-section .right-side .images .img-hover,
 .middle-section .right-side .images .img-hover1 {
-    transform: translate3d(4.5px, -8.5px, 0px);
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
     position: relative;
 }
 
