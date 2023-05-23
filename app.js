@@ -154,7 +154,7 @@ $(window).on('load', function () {
 
 let card = document.querySelector('.middle-section .right-side .images');
 document.addEventListener('mousemove', function (e) {
-    let xAxis = (window.innerWidth / 4 - e.pageX) / 100;
-    let yAxis = (window.innerHeight / 100 - e.pageY) / 100;
+    let xAxis = (window.innerWidth / 50 + e.pageX) / 300;
+    let yAxis = (window.innerHeight / 50 + e.pageY) / 300;
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
