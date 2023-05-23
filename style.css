@@ -125,7 +125,7 @@ a {
 }
 
 .header-top {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     width: 100%;
     text-align: center;
 }
@@ -541,7 +541,8 @@ ul.second-dropdown-content {
 }
 
 .centered h2 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    margin-top: 15px;
 }
 
 .child-dropdown .separator-text {
@@ -763,6 +764,12 @@ h2 {
     max-width: 420px;
     margin: 0 auto;
     text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.inner-bottom-text h2 {
+    margin-top: 15px;
 }
 
 .row {
@@ -780,6 +787,7 @@ h2 {
     margin-bottom: 20px;
     font-size: 35px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .offer-block h3 a {
@@ -947,7 +955,7 @@ html:not(.body-menu-opened) .toggle .line3 {
     font-size: 24px;
     color: rgb(228, 197, 144);
     line-height: 1em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .booking-info .bk-no a {
@@ -1059,7 +1067,7 @@ html:not(.body-menu-opened) .toggle .line3 {
 }
 
 .lorum {
-    margin-bottom: 40px;
+    margin: 0px 0px 40px;
 }
 
 .link-btn {
@@ -1227,7 +1235,7 @@ h5 {
 
 .menu-tabs .dish-block .desc {
     position: relative;
-    font-size: 17px;
+    font-size: 14px;
     text-align: left;
     padding: 0px;
 }
@@ -1296,10 +1304,23 @@ h5 a:hover {
     text-align: center;
 }
 
+.special-offer h2 {
+    margin: 15px 0px 40px;
+}
+
+.img-slider-gallery h4 {
+    margin: 15px 0px 10px;
+}
+
+.img-slider-gallery .text {
+    padding: 0px 0px 15px;
+    font-size: 14px;
+}
+
 .menu-section .open-timing .hours {
     position: relative;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 25px;
 }
 
@@ -1341,6 +1362,7 @@ h4 a {
     width: 100%;
     display: inline-block;
     margin-top: 10px;
+    font-size: 20px;
 }
 
 .padding-imgs {
@@ -1586,7 +1608,7 @@ h4 a {
 .slick-slide .auth-title {
     display: none;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .slick-current .auth-title {
@@ -1627,11 +1649,11 @@ h4 a {
     color: #ffffff;
     text-align: center;
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .reserve-info .title h2 {
-    margin-bottom: 10px;
+    margin: 0px 0px 10px;
 }
 
 .default-form {
@@ -1782,13 +1804,19 @@ h4 a {
     display: inline-block;
     color: rgb(255, 255, 255);
     margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.why-us h2 {
+    margin: 15px 40px;
 }
 
 .reserve-section .info-test .info li {
-    position: relative;
-    line-height: 1.5em;
+    display: inline-block;
     color: rgb(167, 167, 167);
-    margin-bottom: 25px;
+    margin: 0px auto 25px;
+    width: 234px;
+    font-size: 16px;
 }
 
 .data .separator {
@@ -1817,9 +1845,9 @@ h4 a {
 .why-us-block h4 {
     position: relative;
     text-transform: capitalize;
-    margin-bottom: 20px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 20px 0px;
 }
 
 .why-us-block .text {
@@ -1827,6 +1855,7 @@ h4 a {
     font-size: 14px;
     color: rgb(167, 167, 167);
     line-height: 1.6em;
+    padding: 0px;
 }
 
 .why-us .title-box {
@@ -1914,7 +1943,7 @@ h4 a {
 .featured-text h3 {
     position: relative;
     text-transform: capitalize;
-    margin-bottom: 15px;
+    margin: 0px 0px 15px;
     font-size: 35px;
     color: #ffffff;
 }
@@ -2007,6 +2036,7 @@ h3 a {
     font-size: 14px;
     color: rgb(167, 167, 167);
     text-align: left;
+    padding-top: 0px;
 }
 
 .annimation {
@@ -3043,6 +3073,60 @@ i.counter-sidebar {
 
 .handle-preloader .animation-preloader .txt-loading .letters-loading:before {
     color: #111111;
+}
+
+.middle-section .left-bg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -95px;
+}
+
+.bottom-section .bottom-image {
+    position: absolute;
+    right: 0;
+    bottom: -170px;
+    z-index: 1;
+}
+
+.why-us .left-bg {
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+}
+
+.why-us .right-bg {
+    position: absolute;
+    right: 0;
+    top: -100px;
+}
+
+.team .left-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.team .right-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.team-box {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width:1400px) {
+
+    .middle-section .left-bg,
+    .bottom-section .bottom-image,
+    .why-us .left-bg,
+    .why-us .right-bg,
+    .team .left-bg,
+    .team .right-bg {
+        display: none;
+    }
 }
 
 @media screen and (min-width:320px) and (max-width:840px) {
