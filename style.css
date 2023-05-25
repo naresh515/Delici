@@ -1,5 +1,5 @@
 :root {
-    --font-family-DMsans: 'DM Sans', sans-serif;
+    --font-family-DMsans: 'sons';
     --font-family-Forum: 'Forum';
 }
 
@@ -7,6 +7,11 @@
 @font-face {
     font-family: 'Forum';
     src: url(./Forum/Forum-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'sons';
+    src: url(./DM_Sans/DMSans-Regular.ttf);
 }
 
 body,
@@ -17,6 +22,7 @@ body,
     margin: 0 auto;
     box-sizing: border-box;
     font-family: var(--font-family-DMsans);
+    font-weight: 400;
 }
 
 body {
@@ -66,9 +72,14 @@ h6,
     pointer-events: none;
 }
 
-.middle-section .right-side .images .img-hover,
-.middle-section .right-side .images .img-hover1 {
-    position: relative;
+.middle-section .right-side .images .img-hover {
+    position: relative !important;
+    overflow: hidden;
+}
+
+.inner-img1 {
+    top: unset !important;
+    left: unset !important;
 }
 
 .main-container {
@@ -122,7 +133,7 @@ a {
 }
 
 .header-top {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     width: 100%;
     text-align: center;
 }
@@ -334,9 +345,9 @@ a {
     content: '';
     position: absolute;
     margin-left: 30px;
-    margin-top: 8px;
-    height: 7px;
-    width: 7px;
+    margin-top: 10px;
+    height: 6px;
+    width: 6px;
     border: 1px solid rgb(228, 197, 144);
     transform: rotate(45deg);
 }
@@ -736,9 +747,10 @@ ul.second-dropdown-content {
 
 .auto-container {
     position: static;
-    max-width: 1200px;
+    max-width: 100%;
     padding: 0px 15px;
     margin: 0 auto;
+    width: 1170px;
 }
 
 .we-offer-section .title-box {
@@ -766,7 +778,7 @@ h2 {
 }
 
 .inner-bottom-text h2 {
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .row {
@@ -1029,6 +1041,7 @@ html:not(.body-menu-opened) .toggle .line3 {
     position: relative;
     font-size: 24px;
     color: rgb(228, 197, 144);
+    font-family: var(--font-family-Forum);
 }
 
 .inner-bottom {
@@ -1061,6 +1074,10 @@ html:not(.body-menu-opened) .toggle .line3 {
 .lorum,
 .inner-bottom-heading {
     text-align: left;
+}
+
+.inner-bottom-heading {
+    margin-bottom: 20px;
 }
 
 .lorum {
@@ -1780,6 +1797,10 @@ h4 a {
     margin-bottom: 20px;
 }
 
+.team-details h3 {
+    margin: 15px 0px 8px;
+}
+
 .reserve-section .info-test .booking-info .bk-title {
     position: relative;
     font-weight: 700;
@@ -1951,6 +1972,7 @@ h4 a {
     font-size: 14px;
     color: rgb(167, 167, 167);
     margin-bottom: 25px;
+    padding-top: 0px;
 }
 
 .featured-text .theme-btn {
@@ -2026,6 +2048,15 @@ h3 a {
     font-size: 12px;
     letter-spacing: 0.40em;
     margin-bottom: 5px;
+    height: 29px;
+    align-items: center;
+    display: flex;
+}
+
+.right-footer,
+.center-footer,
+.left-footer {
+    padding: 0px 15px;
 }
 
 .team-details .desc {
@@ -2404,7 +2435,7 @@ i.counter-sidebar {
 
 .links li {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .links li a {
@@ -2464,6 +2495,7 @@ i.counter-sidebar {
     padding: 100px 30px 90px;
     background: rgb(14, 13, 12) url(./img/pattern-4.png) center top repeat;
     visibility: visible;
+    width: 510px;
 }
 
 .inner-footer .links li a:before {
@@ -2525,7 +2557,7 @@ i.counter-sidebar {
 
 .text-footer {
     line-height: 1.5em;
-    font-size: 17px;
+    font-size: 14px;
     color: rgb(167, 167, 167);
 }
 
