@@ -3662,7 +3662,9 @@ i.counter-sidebar {
 
     .menu-tabs .dish-block .desc {
         position: absolute;
-        bottom: -30px;
+        width: 80%;
+        margin-bottom: -30px;
+        max-width: 100%;
     }
 
     .img-text {
