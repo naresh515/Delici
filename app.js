@@ -3,7 +3,7 @@ $(window).on('load', function () {
     setTimeout(function () {
         $('.loader-wrap').fadeOut('slow');
         $('body').css('overflow-y', 'scroll');
-    }, 4000);
+    }, 1800);
 
     $(".preloader-close").click(function () {
         $(".loader-wrap").addClass("loader-content");
